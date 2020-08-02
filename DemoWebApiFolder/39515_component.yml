@@ -1,0 +1,106 @@
+AirID: 5064
+ComponentName: 
+Version: 0.0.0
+Endpoints: [n/a]
+
+Eso:
+  - Name: ESO Oauth v2
+    OpenId: [n/a]
+    InUse[Yes/No]: No
+  - Name: WIF
+    OpenId: [n/a]
+    InUse[Yes/No]: No
+  - Name: Rebar Oauth
+    OpenId: [n/a]
+    InUse[Yes/No]: No
+  - Name: Eso AAD Oauth v2
+    OpenId: [n/a]
+    InUse[Yes/No]: No
+  - Name: Rebar AWS Oauth v2
+    OpenId: [n/a]
+    InUse[Yes/No]: No
+
+Services:
+  - Name: CIO Services
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: Mashery Service
+    Version: No
+    InUse[Yes/No]: No
+  - Name: MRDR
+    Version: Any
+    InUse[Yes/No]: No 
+  - Name: Eso-Library-for-Cordova
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: Orchard CMS - ESO WIF Authentication
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Notification Service
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Cloud Storage Adapter
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR SOA Client
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR ETW 
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Telemetry
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Cache Adapter
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Dev SignOn 2
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR AppSearch
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR EF Plugin
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Studio
+    Version: Any
+    InUse[Yes/No]: No
+    
+Templates:
+  - Name: REBAR SPA v2 Template 
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Web Application Project Template (deprecated) 
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Angular SPA V1 Template (deprecated)
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Web Service Project Template
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR Mobile Template
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR DotnetCore Serverless Template
+    Version: Any
+    InUse[Yes/No]: No
+  - Name: REBAR AWS Microservice Template 
+    Version: Any
+    InUse[Yes/No]: No
+
+MRDR:
+  - Scopes: "read_chargecode_mrdr_chargecode"
+    InUse[Yes/No]: No
+  - Scopes: "read_mrdr_wbs_chargecode"
+    InUse[Yes/No]: No
+  - Scopes: "read_mrdr_costcollector_chargecode"
+    InUse[Yes/No]: No
+  - Scopes: "read_mrdr_opportunity"
+    InUse[Yes/No]: No
+
+Dependencies:  
+  - Name: CDN
+    Endpoints: [n/a]
+    InUse[Yes/No]: No

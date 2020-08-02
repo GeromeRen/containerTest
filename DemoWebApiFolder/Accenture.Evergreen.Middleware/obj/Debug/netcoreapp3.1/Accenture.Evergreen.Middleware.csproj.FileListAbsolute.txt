@@ -1,0 +1,3 @@
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware\bin\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.deps.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware\obj\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.AssemblyInfoInputs.cache
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware\obj\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.AssemblyInfo.cs

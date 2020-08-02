@@ -1,0 +1,47 @@
+resources:
+  repositories:
+    - repository: AzurePipelinesTemplateAIR2731
+      type: git
+      name: EnterpriseArchitecture_2641/_git/Azure-Pipelines-Template-AIR2731
+      endpoint: CIO EA Cross Organization Access-REBAR_2731Git
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+      - development
+      - feature/*
+      - release/*
+    exclude: []
+variables:
+  - template: common-variables.yml
+stages:
+  - template: >-
+      templates/compliance-stage-template/compliance-stage.yml@AzurePipelinesTemplateAIR2731
+    parameters:
+      vmImage: $(VMIMAGE)
+      ASAP_PROJECT_ID: $(ASAP_PROJECT_ID)
+      AIR_ID: $(AIR_ID)
+  - template: >-
+      templates/codecheck-stage-template/code-check-dotnet-stage.yml@AzurePipelinesTemplateAIR2731
+    parameters:
+      WARNINGTHRESHOLD: $(WARNINGTHRESHOLD)
+      COVERAGETHRESHOLD: $(COVERAGETHRESHOLD)
+  - template: >-
+      templates/validation-stage-template/validation-dotnetcore-container-stage.yml@AzurePipelinesTemplateAIR2731
+    parameters:
+      dotNetSDKVersion: $(DOTNETSDKVERSION)
+      vmImage: $(VMIMAGE)
+      DockerUsername: $(DOCKER_USERNAME)
+      DockerPassword: $(DOCKER_PASSWORD)
+  - template: >-
+      templates/publishartifacts-stage-template/dotnetcore-publish-stage-template/dotnetcore-publish-container-stage.yml@AzurePipelinesTemplateAIR2731
+    parameters:
+      vmImage: $(VMIMAGE)
+      AQUA_SCANNER_REGISTRY: $(AQUA_SCANNER_REGISTRY)
+      FULL_DIST_IMAGE: $(FULL_DIST_IMAGE_SBX)
+      AQUA_SCANNER_IMAGE: $(AQUA_SCANNER_IMAGE)
+      AQUA_SCANNER_CONNECTION: $(AQUA_SCANNER_CONNECTION)
+      GOOGLE_CONTAINER_REGISTRY: $(GOOGLE_CONTAINER_REGISTRY_SBX)
+      FULL_DIST_IMAGE_TO_PUSH: $(FULL_DIST_IMAGE_SBX)
+      TF_SRC_PATH: $(TF_SRC_PATH)

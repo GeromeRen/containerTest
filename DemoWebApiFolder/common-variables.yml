@@ -1,0 +1,12 @@
+variables:
+  INFRA_LAYER_FOLDER: ''
+  TOOL_TF_BACKEND_KEY: ''
+  AZURERM_BACKEND_STORAGE_CONTAINER: ''
+  resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.projectID: ''
+  resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.pipelineID: ''
+  VMIMAGE: ''
+  DOTNETSDKVERSION: ''
+  DOCKER_USERNAME: ''
+  DOCKER_PASSWORD: ''
+  FULL_DIST_IMAGE_SBX: ''
+  GOOGLE_CONTAINER_REGISTRY_SBX: ''

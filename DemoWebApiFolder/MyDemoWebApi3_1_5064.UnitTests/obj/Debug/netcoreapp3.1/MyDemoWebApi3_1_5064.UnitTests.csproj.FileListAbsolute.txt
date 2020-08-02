@@ -1,0 +1,9 @@
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\bin\Debug\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\bin\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.UnitTests.deps.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\bin\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.UnitTests.runtimeconfig.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\bin\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.UnitTests.runtimeconfig.dev.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\obj\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.UnitTests.AssemblyInfoInputs.cache
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\obj\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.UnitTests.AssemblyInfo.cs
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.UnitTests\obj\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.UnitTests.genruntimeconfig.cache

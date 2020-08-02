@@ -1,0 +1,11 @@
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\bin\Debug\netcoreapp3.1\testhost.exe
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\bin\Debug\netcoreapp3.1\testhost.dll
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\bin\Debug\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\bin\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.UnitTests.deps.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\bin\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.UnitTests.runtimeconfig.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\bin\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.UnitTests.runtimeconfig.dev.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\obj\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.UnitTests.AssemblyInfoInputs.cache
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\obj\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.UnitTests.AssemblyInfo.cs
+C:\Users\chunyu.ren\source\DemoWebApiFolder\Accenture.Evergreen.Middleware.UnitTests\obj\Debug\netcoreapp3.1\Accenture.Evergreen.Middleware.UnitTests.genruntimeconfig.cache

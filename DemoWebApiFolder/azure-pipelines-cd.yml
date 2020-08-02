@@ -1,0 +1,123 @@
+resources:
+  repositories:
+    - repository: AzurePipelinesTemplateAIR2731
+      type: git
+      name: EnterpriseArchitecture_2641/_git/Azure-Pipelines-Template-AIR2731
+      endpoint: CIO EA Cross Organization Access-REBAR_2731Git
+trigger: none
+variables:
+  - template: common-variables.yml
+  - group: ''
+parameters:
+  - name: artifactBuildId
+    type: string
+    default: ''
+stages:
+  - template: release-stage-template/gcp/gcp-microservice-tf-plan-stages.yml
+    parameters:
+      stageName: TF_Plan_Dev
+      environment: 5064-cloudification-Dev
+      artifactBuildId: '${{ parameters.artifactBuildId }}'
+      gcpCredentialFile: sbx-5064-iac-test-e1223c5e-14bdbba7561e.json
+      gcpEnvName: gcp_dev
+      infraLayerFolder: $(INFRA_LAYER_FOLDER)
+      toolTFBackendKey: $(TOOL_TF_BACKEND_KEY)
+      azurermBackendStorageContainer: $(AZURERM_BACKEND_STORAGE_CONTAINER)
+      dependsOn: ''
+      condition: >-
+        or(eq(variables['Build.SourceBranch'], 'refs/heads/development'),
+        startsWith(variables['Build.SourceBranch'], 'refs/heads/feature/'))
+      azDoProjectId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.projectID)
+      azDoBuildDefinitionId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.pipelineID)
+  - template: release-stage-template/gcp/gcp-microservice-tf-apply-stages.yml
+    parameters:
+      stageName: TF_Apply_Dev
+      environment: 5064-cloudification-Dev
+      artifactBuildId: '${{ parameters.artifactBuildId }}'
+      gcpCredentialFile: sbx-5064-iac-test-e1223c5e-14bdbba7561e.json
+      gcpEnvName: gcp_dev
+      infraLayerFolder: $(INFRA_LAYER_FOLDER)
+      toolTFBackendKey: $(TOOL_TF_BACKEND_KEY)
+      azurermBackendStorageContainer: $(AZURERM_BACKEND_STORAGE_CONTAINER)
+      dependsOn: ''
+      condition: >-
+        or(eq(variables['Build.SourceBranch'], 'refs/heads/development'),
+        startsWith(variables['Build.SourceBranch'], 'refs/heads/feature/'))
+      azDoProjectId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.projectID)
+      azDoBuildDefinitionId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.pipelineID)
+  - template: release-stage-template/gcp/gcp-microservice-tf-plan-stages.yml
+    parameters:
+      stageName: TF_Plan_Stage
+      environment: 5064-cloudification-Stage
+      artifactBuildId: '${{ parameters.artifactBuildId }}'
+      gcpCredentialFile: sbx-5064-iac-test-e1223c5e-14bdbba7561e.json
+      gcpEnvName: gcp_stage
+      infraLayerFolder: $(INFRA_LAYER_FOLDER)
+      toolTFBackendKey: $(TOOL_TF_BACKEND_KEY)
+      azurermBackendStorageContainer: $(AZURERM_BACKEND_STORAGE_CONTAINER)
+      dependsOn: TF_Plan_Dev
+      condition: >-
+        or(eq(variables['Build.SourceBranch'], 'refs/heads/release'),
+        startsWith(variables['Build.SourceBranch'], 'refs/heads/master/'))
+      azDoProjectId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.projectID)
+      azDoBuildDefinitionId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.pipelineID)
+  - template: release-stage-template/gcp/gcp-microservice-tf-apply-stages.yml
+    parameters:
+      stageName: TF_Apply_Stage
+      environment: 5064-cloudification-Stage
+      artifactBuildId: '${{ parameters.artifactBuildId }}'
+      gcpCredentialFile: sbx-5064-iac-test-e1223c5e-14bdbba7561e.json
+      gcpEnvName: gcp_stage
+      infraLayerFolder: $(INFRA_LAYER_FOLDER)
+      toolTFBackendKey: $(TOOL_TF_BACKEND_KEY)
+      azurermBackendStorageContainer: $(AZURERM_BACKEND_STORAGE_CONTAINER)
+      dependsOn: TF_Plan_Dev
+      condition: >-
+        or(eq(variables['Build.SourceBranch'], 'refs/heads/release'),
+        startsWith(variables['Build.SourceBranch'], 'refs/heads/master/'))
+      azDoProjectId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.projectID)
+      azDoBuildDefinitionId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.pipelineID)
+  - template: release-stage-template/gcp/gcp-microservice-tf-plan-stages.yml
+    parameters:
+      stageName: TF_Plan_Prod
+      environment: 5064-cloudification-Prod
+      artifactBuildId: '${{ parameters.artifactBuildId }}'
+      gcpCredentialFile: sbx-5064-iac-test-e1223c5e-14bdbba7561e.json
+      gcpEnvName: gcp_prod
+      infraLayerFolder: $(INFRA_LAYER_FOLDER)
+      toolTFBackendKey: $(TOOL_TF_BACKEND_KEY)
+      azurermBackendStorageContainer: $(AZURERM_BACKEND_STORAGE_CONTAINER)
+      dependsOn: TF_Plan_Stage
+      condition: >-
+        or(eq(variables['Build.SourceBranch'], 'refs/heads/release'),
+        startsWith(variables['Build.SourceBranch'], 'refs/heads/master/'))
+      azDoProjectId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.projectID)
+      azDoBuildDefinitionId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.pipelineID)
+  - template: release-stage-template/gcp/gcp-microservice-tf-apply-stages.yml
+    parameters:
+      stageName: TF_Apply_Prod
+      environment: 5064-cloudification-Prod
+      artifactBuildId: '${{ parameters.artifactBuildId }}'
+      gcpCredentialFile: sbx-5064-iac-test-e1223c5e-14bdbba7561e.json
+      gcpEnvName: gcp_prod
+      infraLayerFolder: $(INFRA_LAYER_FOLDER)
+      toolTFBackendKey: $(TOOL_TF_BACKEND_KEY)
+      azurermBackendStorageContainer: $(AZURERM_BACKEND_STORAGE_CONTAINER)
+      dependsOn: TF_Plan_Stage
+      condition: >-
+        or(eq(variables['Build.SourceBranch'], 'refs/heads/release'),
+        startsWith(variables['Build.SourceBranch'], 'refs/heads/master/'))
+      azDoProjectId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.projectID)
+      azDoBuildDefinitionId: >-
+        $(resources.pipeline.vergreenContainerSampleAIR71310MultiStageDemoCI.pipelineID)

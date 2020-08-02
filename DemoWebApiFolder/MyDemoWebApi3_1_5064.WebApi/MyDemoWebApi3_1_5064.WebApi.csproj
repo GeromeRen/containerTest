@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AirId>5064</AirId>
+        <ProjectName>MyDemoWebApi3_1_5064.WebApi</ProjectName>
+        <RebarTemplateVersion>3.0.3</RebarTemplateVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.Metrics" Version="3.3.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6"/>
+        <PackageReference Include="Microsoft.Identity.Web" Version="0.1.2-preview"/>
+        <PackageReference Include="Serilog.AspNetCore" Version="3.4.0"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Accenture.Evergreen.Middleware\Accenture.Evergreen.Middleware.csproj"/>
+    </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\bin\Debug\netcoreapp3.1\appsettings.Production.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\bin\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.WebApi.exe
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\obj\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.WebApi.AssemblyInfoInputs.cache
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\obj\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.WebApi.AssemblyInfo.cs
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\obj\Debug\netcoreapp3.1\MyDemoWebApi3_1_5064.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\obj\Debug\netcoreapp3.1\staticwebassets\MyDemoWebApi3_1_5064.WebApi.StaticWebAssets.Manifest.cache
+C:\Users\chunyu.ren\source\DemoWebApiFolder\MyDemoWebApi3_1_5064.WebApi\obj\Debug\netcoreapp3.1\staticwebassets\MyDemoWebApi3_1_5064.WebApi.StaticWebAssets.xml
